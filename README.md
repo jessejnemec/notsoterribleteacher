@@ -1,2 +1,2 @@
 # notsoterribleteacher
-NSTT is a teaching tip generator that provides educators of all levels with random daily ideas for improving their classroom planning, management, and environment.
+NSTT is a web-based teaching tip generator that provides educators with random ideas for improving their classroom planning, management, and environment.
