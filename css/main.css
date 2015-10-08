@@ -1,0 +1,142 @@
+/* Color Palette Hexes
+  #fde500 - Yellow
+  #ec008f - Pink
+  #bdbdbd - Grey
+  #222 - Dark Grey
+  #fff - White
+  #000 - Black
+*/
+
+/* Default Styling */
+html, body {
+  margin: 0px;
+  padding: 0px;
+  font: 20px Poiret One, sans-serif;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+/* Header Styling */
+.nav-top {
+  width: 100%;
+  min-width: 1200px;
+  background-color: #000;
+  height: 40px;
+  color: #fff;
+}
+
+.nav-top .logo a {
+  float: left;
+  padding: 15px 30px;
+  font-size: 120%;
+  line-height: 10px;
+  color: #fff;
+}
+
+.nav-top .logo a:hover {
+  background: #444;
+}
+
+.nav-topsub {
+  margin: 0px;
+	padding: 0px;
+}
+
+.nav-topsub li {
+  float: left;
+	list-style: none;
+}
+
+.nav-topsub li a {
+  display: inline-block;
+	padding: 10px 10px;
+	min-width: 100px;
+  min-height: 20px;
+	background: #000;
+	color: #fff;
+  font-size: 70%;
+  text-decoration: none;
+}
+
+.nav-topsub li a:hover {
+  background: #444;
+}
+
+.nav-topsub div {
+  position: absolute;
+	visibility: hidden;
+	background: #fff;
+}
+
+.nav-topsub div a {
+	display: block;
+  padding: 5px 10px;
+	text-align: left;
+}
+
+.nav-topsub div a:hover {
+  background: #444;
+}
+
+.nav-top .social {
+  float: right;
+  padding: 7px 30px;
+}
+
+.nav-top .join {
+  display: inline-block;
+  vertical-align: top;
+  line-height: 25px;
+  margin-right: 5px;
+  font-size: 70%;
+}
+
+/* Section Styling */
+.section {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.section #logo {
+}
+
+.section #gradespace {
+  position: fixed;
+  text-align: center;
+  line-height: 25px;
+  left: 950px;
+  top: 100px;
+  font-size: 80%;
+  font-weight: bold;
+  width: 200px;
+  height: 365px;
+}
+
+.section #button {
+  margin: 10px;
+  padding: 0;
+}
+
+/* Footer Styling */
+.nav-bottom {
+  width: 100%;
+  min-width: 1200px;
+  height: 40px;
+  color: #000;
+}
+
+.nav-bottom .email {
+  font-size: 80;
+}
+
+.nav-bottom .copyright {
+  font-size: 60%;
+}
+
+.nav-bottom .icons {
+  font-size: 40%;
+}
