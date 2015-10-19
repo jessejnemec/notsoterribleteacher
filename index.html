@@ -8,6 +8,9 @@
   <link rel="shortcut icon" href="img/favicon.ico">
 
   <link rel="stylesheet" type="text/css" href="css/main.css">
+
+  <script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+
   <link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 
 </head>
@@ -15,9 +18,9 @@
 <body>
 
   <header class="nav-top">
-    <div class="logo"><a href="/Users/jessejnemec/Desktop/HRP/index.html">NSTT</a></div>
+    <div class="logo"><a href="file:///Users/jessejnemec/Desktop/HRP/notsoterribleteacher/index.html">NSTT</a></div>
       <ul class="nav-topsub" onMouseOver="showMenu('m1')" onMouseOut="hideMenu('m1')">
-        <li><a href="/Users/jessejnemec/Desktop/HRP/index.html">Planning</a>
+        <li><a href="file:///Users/jessejnemec/Desktop/HRP/notsoterribleteacher/index.html">Planning</a>
           <div id="m1">
             <a href="#" onClick="ideaSelector('0')">Organizers</a>
             <a href="#" onClick="ideaSelector('1')">Choral</a>
@@ -31,7 +34,7 @@
         </li>
       </ul>
       <ul class="nav-topsub" onMouseOver="showMenu('m2')" onMouseOut="hideMenu('m2')">
-        <li><a href="/Users/jessejnemec/Desktop/HRP/index.html">Management</a>
+        <li><a href="file:///Users/jessejnemec/Desktop/HRP/notsoterribleteacher/index.html">Management</a>
           <div id="m2">
             <a href="#" onClick="ideaSelector('8')">Body Language</a>
             <a href="#" onClick="ideaSelector('9')">Attention Getter</a>
@@ -43,7 +46,7 @@
         </li>
       </ul>
       <ul class="nav-topsub" onMouseOver="showMenu('m3')" onMouseOut="hideMenu('m3')">
-        <li><a href="/Users/jessejnemec/Desktop/HRP/index.html">Environment</a>
+        <li><a href="file:///Users/jessejnemec/Desktop/HRP/notsoterribleteacher/index.html">Environment</a>
           <div id="m3">
             <a href="#" onClick="ideaSelector('14')">Objective</a>
             <a href="#" onClick="ideaSelector('15')">SMART Goal</a>
@@ -53,6 +56,14 @@
             <a href="#" onClick="ideaSelector('19')">Timeline</a>
             <a href="#" onClick="ideaSelector('20')">Class Pet</a>
           </div>
+        </li>
+      </ul>
+      <ul class="nav-topsub" onClick="findIdeasWithTag()">
+        <li><a href="">Search Ideas</a>
+        </li>
+      </ul>
+      <ul class="nav-topsub" onClick="schoolFinder()">
+        <li><a href="">School Finder</a>
         </li>
       </ul>
     <div class="social">
@@ -73,14 +84,16 @@
   </header>
 
   <section class="section">
+      <!-- <div id = "addspace"></div> -->
       <img id = "logo" img src="img/nstt_logo.jpg" width="450px" alt="NSTT">
+      <div id = "map"></div>
       <div id = "gradespace"></div>
       <div id = "button"><img src="img/nstt_button_norm.jpg" width="200px" height="50px" alt="Give Me An Idea Button"
         onMouseOver="this.src='img/nstt_button_active.jpg'"
         onMouseOut="this.src='img/nstt_button_norm.jpg'"
         onMouseDown="this.src='img/nstt_button_click.jpg'"
         onMouseUp="this.src='img/nstt_button_norm.jpg'"
-        onclick="ideaGenerator();"/></div>
+        onClick="ideaGenerator()"/></div>
   </section>
 
   <footer class="nav-bottom">
